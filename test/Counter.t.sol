@@ -21,7 +21,7 @@ contract CounterTest is Test {
         proxy = BasicBeaconFactory(address(p));
     }
 
-    function test_deployProxy() public {
+    function test_deployBeaconProxy() public {
         CounterUpgrade counterUpgrade = new CounterUpgrade();
 
         Counter counter0 = Counter(address(proxy.createBeaconProxy("")));
